@@ -1,0 +1,16 @@
+let altura = prompt ('Qual é sua altura em metros')
+let peso = prompt ('Qual é seu peso')
+let resultado = peso / (altura * altura)
+switch (true){
+case ( resultado < 18.5):
+console.log ('Seu Índice de Massa Corporal é classificado como magreza')
+break;
+case ( resultado > 18.5 && resultado < 24.9 ):
+console.log ('Seu Índice de Massa Corporal é classificado como normal')
+case ( resultado > 25 && resultado < 25.9):
+console.log ('Seu Índice de Massa Corporal é classificado como Sobrepeso')
+break;
+case ( resultado > 30 && resultado < 34.9):
+console.log ('Seu Índice de Massa Corporal é classificado como Obesidade grau 1')
+break;
+case ( resultado > 35 && resultado < 39.9):
